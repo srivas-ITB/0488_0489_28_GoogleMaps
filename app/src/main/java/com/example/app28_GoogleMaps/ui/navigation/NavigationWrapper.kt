@@ -36,7 +36,7 @@ fun NavigationWrapper() {
     val drawerState = rememberDrawerState(DrawerValue.Closed)
     val scope = rememberCoroutineScope()
     ModalNavigationDrawer(drawerState = drawerState,
-        //Afegir això per desactivar el gesture (genera conflicte amb GoogleMaps)
+        //IMPORTANT::Afegir això per desactivar el gesture (genera conflicte amb GoogleMaps)
         gesturesEnabled = drawerState.isOpen,
         drawerContent = { DrawerMenu(currentRoute, backStack, scope, drawerState) }
     ) {
