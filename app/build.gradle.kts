@@ -14,6 +14,7 @@ plugins {
 
 val bundleId = "com.example.app28_GoogleMaps"
 
+
 android {
     namespace = bundleId
     compileSdk {
@@ -104,7 +105,6 @@ dependencies {
 
 
 }
-
 
 secrets {
     propertiesFileName = "secrets.properties"
